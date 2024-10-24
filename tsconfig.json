@@ -21,7 +21,6 @@
     "noUnusedParameters": true,
     "noLib": false,
     "preserveConstEnums": false,
-    "suppressImplicitAnyIndexErrors": true,
     "importHelpers": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
