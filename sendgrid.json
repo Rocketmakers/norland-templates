@@ -15,6 +15,10 @@
     "invite": {
       "path": "layouts/invite",
       "templates": ["html", "txt"]
+    },
+    "inviteAdmin": {
+      "path": "layouts/inviteAdmin",
+      "templates": ["html", "txt"]
     }
   }
 }
