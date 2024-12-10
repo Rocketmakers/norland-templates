@@ -23,6 +23,10 @@
     "magicLink": {
       "path": "layouts/magicLink",
       "templates": ["html", "txt"]
+    },
+    "unreadMessage": {
+      "path": "layouts/unreadMessage",
+      "templates": ["html", "txt"]
     }
   }
 }
