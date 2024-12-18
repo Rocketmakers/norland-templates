@@ -1,0 +1,35 @@
+{
+  "description": "Specify required object",
+  "examples": [
+    {
+      "firstName": "firstName",
+      "lastName": "lastName",
+      "state": "state",
+      "jobFriendlyId": "jobFriendlyId",
+      "emailAddress": "norland@rocketmakers.com",
+      "mobilePhoneNumber": "mobilePhoneNumber",
+      "homePhoneNumber": "homePhoneNumber"
+    },
+    {
+      "firstName": "firstName",
+      "lastName": "lastName",
+      "state": "state",
+      "jobFriendlyId": "jobFriendlyId",
+      "emailAddress": "norland@rocketmakers.com",
+      "mobilePhoneNumber": "mobilePhoneNumber",
+      "homePhoneNumber": "homePhoneNumber"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "firstName": { "type": "string" },
+    "lastName": { "type": "string" },
+    "state": { "type": "string" },
+    "jobFriendlyId": { "type": "string" },
+    "emailAddress": { "type": "string" },
+    "mobilePhoneNumber": { "type": "string" },
+    "homePhoneNumber": { "type": "string" }
+  },
+  "required": ["firstName", "lastName", "state", "jobFriendlyId", "emailAddress"],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
