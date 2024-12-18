@@ -7,7 +7,7 @@ export interface IModel {
   firstName: string
   lastName: string
   emailAddress: string
-  state: string
+  status: string
   mobilePhoneNumber?: string
   homePhoneNumber?: string
 }
@@ -17,13 +17,13 @@ export const sampleData: IModel[] = [
     firstName: 'firstName',
     lastName: 'lastName',
     emailAddress: 'norland@rocketmakers.com',
-    state: 'new state'
+    status: 'new status'
   },
   {
     firstName: 'firstName',
     lastName: 'lastName',
     emailAddress: 'norland@rocketmakers.com',
-    state: 'new state',
+    status: 'new status',
     mobilePhoneNumber: '07000000000',
     homePhoneNumber: '00000000000'
   },

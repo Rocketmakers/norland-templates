@@ -4,7 +4,7 @@
     {
       "firstName": "firstName",
       "lastName": "lastName",
-      "state": "state",
+      "status": "status",
       "jobFriendlyId": "jobFriendlyId",
       "emailAddress": "norland@rocketmakers.com",
       "mobilePhoneNumber": "mobilePhoneNumber",
@@ -13,7 +13,7 @@
     {
       "firstName": "firstName",
       "lastName": "lastName",
-      "state": "state",
+      "status": "status",
       "jobFriendlyId": "jobFriendlyId",
       "emailAddress": "norland@rocketmakers.com",
       "mobilePhoneNumber": "mobilePhoneNumber",
@@ -24,12 +24,12 @@
   "properties": {
     "firstName": { "type": "string" },
     "lastName": { "type": "string" },
-    "state": { "type": "string" },
+    "status": { "type": "string" },
     "jobFriendlyId": { "type": "string" },
     "emailAddress": { "type": "string" },
     "mobilePhoneNumber": { "type": "string" },
     "homePhoneNumber": { "type": "string" }
   },
-  "required": ["firstName", "lastName", "state", "jobFriendlyId", "emailAddress"],
+  "required": ["firstName", "lastName", "status", "jobFriendlyId", "emailAddress"],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

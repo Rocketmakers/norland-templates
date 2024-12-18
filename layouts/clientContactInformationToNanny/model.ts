@@ -6,7 +6,7 @@
 export interface IModel {
   firstName: string
   lastName: string
-  state: string
+  status: string
   jobFriendlyId: string
   emailAddress: string
   mobilePhoneNumber?: string
@@ -15,14 +15,14 @@ export interface IModel {
 
 export const sampleData: IModel[] = [
   {
-    state: 'new state',
+    status: 'new status',
     jobFriendlyId: '001',
     firstName: 'firstName',
     lastName: 'lastName',
     emailAddress: 'norland@rocketmakers.com',
   },
   {
-    state: 'new state',
+    status: 'new status',
     jobFriendlyId: '001',
     firstName: 'firstName',
     lastName: 'lastName',
