@@ -8,10 +8,10 @@
       <div class="norland-space-top">
         <p>Your application on job {{jobFriendlyId}} has progressed to {{status}}. The client is {{firstName}} {{lastName}} and you can contact them to arrange the next steps.</p>
         <p>Email address: {{emailAddress}}</p>
-        {{#if mobilePhoneNumber includeZero=true}}
+        {{#if mobilePhoneNumber}}
         <p>Mobile phone number: {{mobilePhoneNumber}}</p>
         {{/if}}
-        {{#if homePhoneNumber includeZero=true}}
+        {{#if homePhoneNumber}}
         <p>Home phone number: {{homePhoneNumber}}</p>
         {{/if}}
       </div>
