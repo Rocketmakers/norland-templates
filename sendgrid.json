@@ -24,6 +24,14 @@
       "path": "layouts/magicLink",
       "templates": ["html", "txt"]
     },
+    "clientContactInformationToNanny": {
+      "path": "layouts/clientContactInformationToNanny",
+      "templates": ["html", "txt"]
+    },
+    "nannyContactInformationToClient": {
+      "path": "layouts/nannyContactInformationToClient",
+      "templates": ["html", "txt"]
+    },
     "unreadMessage": {
       "path": "layouts/unreadMessage",
       "templates": ["html", "txt"]
