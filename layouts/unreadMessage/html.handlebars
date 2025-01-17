@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Unread message</title>
+    {{> styles}}
+  </head>
+  <body>
+    <div class="norland-msg">
+      <div class="norland-space-top">
+        <p>Dear {{name}}</p>
+        <p>You have a new direct message. Log in to the Norland Portal to read it.</p>
+      </div>
+      <a href={{returnUrl}} class="norland-button norland-space-top">Read new message</a>
+      {{> footer}}
+    </div>
+  </body>
+</html>

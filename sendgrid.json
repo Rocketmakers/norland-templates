@@ -31,6 +31,10 @@
     "nannyContactInformationToClient": {
       "path": "layouts/nannyContactInformationToClient",
       "templates": ["html", "txt"]
+    },
+    "unreadMessage": {
+      "path": "layouts/unreadMessage",
+      "templates": ["html", "txt"]
     }
   }
 }
