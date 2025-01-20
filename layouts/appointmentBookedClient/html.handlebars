@@ -7,12 +7,13 @@
     <div class="norland-msg">
       <div class="norland-space-top">
         <p>Dear {{clientFirstName}}</p>
+
         <p>We are delighted to confirm your {{appointmentType}} with {{nannyFirstName}} {{nannyLastName}}.</p>
 
-        {{appointmentDate}}
-        {{appointmentTime}}
+        <p>{{appointmentDate}}</p>
+        <p>{{appointmentTime}}</p>
         {{#if appointmentMethod}}
-        {{appointmentMethod}}
+        <p>{{appointmentMethod}}</p>
         {{/if}}
 
         <p>You can contact {{nannyFirstName}} on: {{nannyMobileNumber}}</p>
@@ -20,9 +21,9 @@
         <p>If you require further information, please do not hesitate to contact us.</p>
 
         {{#if jobAdminName}}
-        {{jobAdminName}}
+        <p>{{jobAdminName}}</p>
         {{else}}
-        Norland Agency
+        <p>Norland Agency</p>
         {{/if}}
       </div>
       {{> footer}}
