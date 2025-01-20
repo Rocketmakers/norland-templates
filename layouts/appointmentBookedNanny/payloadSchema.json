@@ -1,0 +1,34 @@
+{
+  "description": "Specify required object",
+  "examples": [
+    {
+      "nannyFirstName": "nannyFirstName",
+      "clientFirstName": "clientFirstName",
+      "clientLastName": "clientLastName",
+      "clientMobileNumber": "clientMobileNumber",
+      "jobAdminName": "jobAdminName",
+      "jobTitle": "jobTitle",
+      "jobFriendlyId": "jobFriendlyId",
+      "appointmentType": "appointmentType",
+      "appointmentDate": "appointmentDate",
+      "appointmentTime": "appointmentTime",
+      "appointmentMethod": "appointmentMethod"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "nannyFirstName": { "type": "string" },
+    "clientFirstName": { "type": "string" },
+    "clientLastName": { "type": "string" },
+    "clientMobileNumber": {"type": "string"},
+    "jobAdminName": { "type": "string" },
+    "jobTitle": {"type": "string"},
+    "jobFriendlyId": {"type": "string"},
+    "appointmentType": { "type": "string" },
+    "appointmentDate": { "type": "string" },
+    "appointmentTime": { "type": "string" },
+    "appointmentMethod": { "type": "string" }
+  },
+  "required": ["nannyFirstName", "clientFirstName", "clientLastName", "clientMobileNumber", "appointmentType", "appointmentDate", "appointmentTime"],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

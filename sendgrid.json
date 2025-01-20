@@ -12,6 +12,14 @@
     }
   },
   "layouts": {
+    "appointmentBookedClient": {
+      "path": "layouts/appointmentBookedClient",
+      "templates": ["html", "txt"]
+    },
+    "appointmentBookedNanny": {
+      "path": "layouts/appointmentBookedNanny",
+      "templates": ["html", "txt"]
+    },
     "invite": {
       "path": "layouts/invite",
       "templates": ["html", "txt"]
