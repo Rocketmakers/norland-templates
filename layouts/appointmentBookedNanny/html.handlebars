@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Appointment Booked</title>
+    {{> styles}}
+  </head>
+  <body>
+    <div class="norland-msg">
+      <div class="norland-space-top">
+        <p>Dear {{nannyFirstName}}</p>
+        <p>We are delighted to confirm your {{appointmentType}} with {{clientFirstName}} {{clientLastName}} for {{jobTitle}} ({{jobFriendlyId}}).</p>
+
+        {{appointmentDate}}
+        {{appointmentTime}}
+        {{appointmentMethod}}
+
+        <p>You can contact {{clientFirstName}} on: {{clientMobileNumber}}</p>
+
+        <p>If you require further information, please do not hesitate to contact me.</p>
+
+        {{jobAdminName}}
+      </div>
+      {{> footer}}
+    </div>
+  </body>
+</html>
