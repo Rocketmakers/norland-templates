@@ -11,13 +11,19 @@
 
         {{appointmentDate}}
         {{appointmentTime}}
+        {{#if appointmentMethod}}
         {{appointmentMethod}}
+        {{/if}}
 
         <p>You can contact {{clientFirstName}} on: {{clientMobileNumber}}</p>
 
-        <p>If you require further information, please do not hesitate to contact me.</p>
+        <p>If you require further information, please do not hesitate to contact us.</p>
 
+        {{#if jobAdminName}}
         {{jobAdminName}}
+        {{else}}
+        Norland Agency
+        {{/if}}
       </div>
       {{> footer}}
     </div>

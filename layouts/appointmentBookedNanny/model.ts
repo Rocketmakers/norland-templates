@@ -8,13 +8,13 @@ export interface IModel {
   clientFirstName: string;
   clientLastName: string;
   clientMobileNumber: string;
-  jobAdminName: string;
+  jobAdminName?: string;
   jobTitle: string;
   jobFriendlyId: string;
   appointmentType: string;
   appointmentDate: string;
   appointmentTime: string;
-  appointmentMethod: string;
+  appointmentMethod?: string;
 }
 
 export const sampleData: IModel[] = [

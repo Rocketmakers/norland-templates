@@ -8,11 +8,11 @@ export interface IModel {
   nannyFirstName: string;
   nannyLastName: string;
   nannyMobileNumber: string;
-  jobAdminName: string;
+  jobAdminName?: string;
   appointmentType: string;
   appointmentDate: string;
   appointmentTime: string;
-  appointmentMethod: string;
+  appointmentMethod?: string;
 }
 
 export const sampleData: IModel[] = [
