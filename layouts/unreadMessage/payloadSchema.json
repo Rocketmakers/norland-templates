@@ -1,1 +1,11 @@
-{"description":"Specify required object","examples":[{"returnUrl":"https://www.rocketmakers.com","name":"name"},{"returnUrl":"https://www.rocketmakers.com","name":"name"}],"type":"object","properties":{"returnUrl":{"type":"string"},"name":{"type":"string"}},"required":["returnUrl","name"],"$schema":"http://json-schema.org/draft-07/schema#"}
+{
+  "description": "Specify required object",
+  "examples": [
+    { "returnUrl": "https://www.rocketmakers.com", "firstName": "firstName" },
+    { "returnUrl": "https://www.rocketmakers.com", "firstName": "firstName" }
+  ],
+  "type": "object",
+  "properties": { "returnUrl": { "type": "string" }, "firstName": { "type": "string" } },
+  "required": ["returnUrl", "firstName"],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
