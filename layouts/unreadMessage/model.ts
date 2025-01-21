@@ -5,16 +5,16 @@
  */
 export interface IModel {
   returnUrl: string,
-  name: string
+  firstName: string
 }
 
 export const sampleData: IModel[] = [
   {
     returnUrl: "https://www.rocketmakers.com",
-    name: "name"
+    firstName: "firstName"
   },
   {
     returnUrl: "https://www.rocketmakers.com",
-    name: "name"
+    firstName: "firstName"
   },
 ]
