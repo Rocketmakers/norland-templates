@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Interview Requested</title>
+    {{> styles}}
+  </head>
+  <body>
+    <div class="norland-msg">
+      <div class="norland-space-top">
+        <p>Dear {{nannyFirstName}},</p>
+
+        <p>Congratulations, {{clientFirstName}} {{clientLastName}} has requested to book an interview with you for {{jobFriendlyId}}, {{jobTitle}}.</p>
+
+        <p>Please use the following details to contact them and arrange a time that suits you both:</p>
+
+        <p>{{clientFirstName}} {{clientLastName}}</p>
+        <p>{{clientEmailAddress}}</p>
+        <p>{{clientMobileNumber}}</p>
+        <span>
+        {{clientAddressLine1}},
+        {{#if clientAddressLine2}}{{clientAddressLine2}},{{/if}}
+        {{clientCity}},
+        {{#if clientCounty}}{{clientCounty}},{{/if}}
+        {{clientCountry}},
+        {{clientPostCode}}
+        </span>
+
+        <p>Please ensure you call the family within the next 48 hours, addressing them by their family name and title, for example, "Please may I speak with Mrs Smith, my name is Jane Bennett and I am calling from Norland College".</p>
+
+        <p>Please make sure you have all of your questions to hand as well as your check-list to ensure you get all of the required information prior to your interview. Make sure you have your diary and a pen to hand.</p>
+
+        <p>As soon as the interview has been arranged please advise the NQN team via email or direct message as to the date, time and family name/job number of the family who you are meeting. It is very important that you let us know so we can follow up after your interview.</p>
+
+        <p>Following on from your interview, please provide us with written feedback along with the family name/job number as well as whether you would like to move forward with the family or not. If it is the latter, you will be expected to call the family directly to update them on your decision. The NQN team are unable to do this for you.</p>
+
+        <p>If you are struggling to get hold of the family after 48 hours please get in touch with the NQN team.</p>
+
+        <p>If you have any questions in the meantime please do not hesitate to ask.</p>
+
+        <p>Kind regards,</p>
+
+        {{#if jobAdminName}}
+        <p>{{jobAdminName}}</p>
+        {{else}}
+        <p>Norland Agency</p>
+        {{/if}}
+      </div>
+    </div>
+  </body>
+</html>
