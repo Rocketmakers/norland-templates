@@ -15,7 +15,14 @@
         <p>{{clientFirstName}} {{clientLastName}}</p>
         <p>{{clientEmailAddress}}</p>
         <p>{{clientMobileNumber}}</p>
-        <p>{{clientAddress}}</p>
+        <span>
+        {{clientAddressLine1}},
+        {{#if clientAddressLine2}}{{clientAddressLine2}},{{/if}}
+        {{clientCity}},
+        {{#if clientCounty}}{{clientCounty}},{{/if}}
+        {{clientCountry}},
+        {{clientPostCode}}
+        </span>
 
         <p>Please ensure you call the family within the next 48 hours, addressing them by their family name and title, for example, "Please may I speak with Mrs Smith, my name is Jane Bennett and I am calling from Norland College".</p>
 

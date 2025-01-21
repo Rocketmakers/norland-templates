@@ -11,7 +11,12 @@ export interface IModel {
   clientLastName: string;
   clientEmailAddress: string;
   clientMobileNumber: string;
-  clientAddress: string;
+  clientAddressLine1: string;
+  clientAddressLine2?: string;
+  clientCity: string;
+  clientCounty?: string;
+  clientCountry: string;
+  clientPostCode: string;
   jobAdminName?: string;
 }
 
@@ -24,7 +29,12 @@ export const sampleData: IModel[] = [
     clientLastName: "clientLastName",
     clientEmailAddress: "clientEmailAddress",
     clientMobileNumber: "clientMobileNumber",
-    clientAddress: "clientAddress",
+    clientAddressLine1: "clientAddressLine1",
+    clientAddressLine2: "clientAddressLine2",
+    clientCity: "clientCity",
+    clientCounty: "clientCity",
+    clientCountry: "clientCountry",
+    clientPostCode: "clientPostCode",
     jobAdminName: "jobAdminName"
   },
 ]

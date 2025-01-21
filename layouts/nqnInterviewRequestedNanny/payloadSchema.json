@@ -9,7 +9,12 @@
       "clientLastName": "clientLastName",
       "clientEmailAddress": "clientEmailAddress",
       "clientMobileNumber": "clientMobileNumber",
-      "clientAddress": "clientAddress",
+      "clientAddressLine1": "clientAddressLine1",
+      "clientAddressLine2": "clientAddressLine2",
+      "clientCity": "clientCity",
+      "clientCounty": "clientCity",
+      "clientCountry": "clientCountry",
+      "clientPostCode": "clientPostCode",
       "jobAdminName": "jobAdminName"
     }
   ],
@@ -22,9 +27,14 @@
     "clientLastName": { "type": "string" },
     "clientEmailAddress": { "type": "string" },
     "clientMobileNumber": { "type": "string" },
-    "clientAddress": { "type": "string" },
+    "clientAddressLine1": { "type": "string" },
+    "clientAddressLine2": { "type": "string" },
+    "clientCity": { "type": "string" },
+    "clientCounty": { "type": "string" },
+    "clientCountry": { "type": "string" },
+    "clientPostCode": { "type": "string" },
     "jobAdminName": { "type": "string" }
   },
-  "required": ["nannyFirstName", "jobFriendlyId", "jobTitle", "clientFirstName", "clientLastName", "clientEmailAddress", "clientMobileNumber", "clientAddress"],
+  "required": ["nannyFirstName", "jobFriendlyId", "jobTitle", "clientFirstName", "clientLastName", "clientEmailAddress", "clientMobileNumber", "clientAddressLine1", "clientCity", "clientCountry", "clientPostCode"],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }
