@@ -1,15 +1,18 @@
 <html>
   <head>
-    <title>Invitation to Norland</title>
+    <title>Log in to your Norland Account</title>
     {{> styles}}
   </head>
   <body>
     <div class="norland-msg">
       <div class="norland-space-top">
-        <p>You have requested to login to Norland.</p>
+        {{#if firstName}}
+        <p>Dear {{firstName}},</p>
+        {{/if}}
+        <p>To access your Norland Account please, click the button below.</p>
       </div>
       <a href={{returnUrl}} class="norland-button norland-space-top" target="_blank" rel="noopener noreferrer">Login</a>
-      {{> footer}}
+      <p>If you experience any issues logging in to your account, please contact the Norland Agency.</p>
     </div>
   </body>
 </html>
