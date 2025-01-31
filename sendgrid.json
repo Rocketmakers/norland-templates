@@ -9,6 +9,9 @@
     },
     "styles": {
       "path": "partials/html/styles.handlebars"
+    },
+    "meta": {
+      "path": "partials/html/meta.handlebars"
     }
   },
   "layouts": {
