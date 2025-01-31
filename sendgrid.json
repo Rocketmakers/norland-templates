@@ -9,6 +9,9 @@
     },
     "styles": {
       "path": "partials/html/styles.handlebars"
+    },
+    "meta": {
+      "path": "partials/html/meta.handlebars"
     }
   },
   "layouts": {
@@ -38,6 +41,10 @@
     },
     "nqnTrialRequestedNanny": {
       "path": "layouts/nqnTrialRequestedNanny",
+      "templates": ["html", "txt"]
+    },
+    "referenceClientVerification": {
+      "path": "layouts/referenceClientVerification",
       "templates": ["html", "txt"]
     },
     "unreadMessage": {

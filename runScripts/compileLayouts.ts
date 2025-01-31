@@ -6,6 +6,7 @@ import * as path from "path"
 import { setDefaultLoggerLevel, createLogger } from "@rocketmakers/shell-commands/lib/logger"
 import { Args } from "@rocketmakers/shell-commands/lib/args"
 import { FileSystem } from "@rocketmakers/shell-commands/lib/fs"
+import { handlebarsHelpers } from "./handlebarsHelpers"
 
 const logger = createLogger("generate-schemas")
 
@@ -56,6 +57,13 @@ async function run() {
     const content = FileSystem.readFile(partials[partial].path)
     handlebars.registerPartial(partial, content)
     logger.info("Registered partial: ", partial)
+  }
+
+  logger.info("Registering helpers --> ")
+
+  for (const helper of handlebarsHelpers) {
+    handlebars.registerHelper(helper.name, helper.helper)
+    logger.info("Registered helper: ", helper.name)
   }
 
   logger.info("Compiling layouts --> ")

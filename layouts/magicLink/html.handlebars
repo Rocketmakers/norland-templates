@@ -1,18 +1,20 @@
 <html>
   <head>
-    <title>Log in to your Norland Account</title>
+    <title>Verify Email Address</title>
+    {{> meta}}
     {{> styles}}
   </head>
   <body>
     <div class="norland-msg">
-      <div class="norland-space-top">
-        {{#if firstName}}
-        <p>Dear {{firstName}},</p>
-        {{/if}}
-        <p>To access your Norland Account please, click the button below.</p>
+      {{> header}}
+      <div class="norland-inner">
+        <h1>Verify Email Address</h1>
+        <p>Please verify your email by clicking the button below:</p>
+        <a href={{returnUrl}} class="norland-button norland-space" target="_blank" rel="noopener noreferrer">Verify Email</a>
+        <p>This link will expire in 24 hours.</p>
+        <p class="norland-sub">If you didn&apos;t request this, please ignore this email or contact our support team at <a href="mailto:Agency@norland.ac.uk">Agency@norland.ac.uk</a></p>
       </div>
-      <a href={{returnUrl}} class="norland-button norland-space-top" target="_blank" rel="noopener noreferrer">Login</a>
-      <p>If you experience any issues logging in to your account, please contact the Norland Agency.</p>
+      {{> footer}}
     </div>
   </body>
 </html>
