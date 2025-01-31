@@ -27,7 +27,7 @@ export const sampleData: IModel[] = [
     jobTitle: "jobTitle",
     jobFriendlyId: "jobFriendlyId",
     appointmentType: "appointmentType",
-    appointmentDate: "31/10/2024",
+    appointmentDate: "appointmentDate",
     appointmentTime: "appointmentTime",
     appointmentMethod: "appointmentMethod"
   },

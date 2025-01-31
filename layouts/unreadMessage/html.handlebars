@@ -1,21 +1,17 @@
 <html>
   <head>
     <title>New Direct Message</title>
-    {{> meta}}
     {{> styles}}
   </head>
   <body>
     <div class="norland-msg">
-      {{> header}}
-      <div class="norland-inner">
-        <h1>New Direct Message</h1>
-        <p>Dear {{firstName}},</p>
+      <div class="norland-space-top">
+        <p>Dear {{firstName}}</p>
         <p>You have a new direct message. Please log in to the Norland Portal to read it. </p>
-        <a href={{returnUrl}} class="norland-button norland-space" target="_blank" rel="noopener noreferrer">Read new message</a>
-        <p>Many thanks,</p>
-        <p><strong>Norland Agency</strong></p>
       </div>
-      {{> footer}}
+      <a href={{returnUrl}} class="norland-button norland-space-top">Read new message</a>
+      <p>Many thanks</p>
+      <p>Norland Agency</p>
     </div>
   </body>
 </html>
