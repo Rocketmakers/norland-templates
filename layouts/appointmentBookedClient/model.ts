@@ -23,7 +23,7 @@ export const sampleData: IModel[] = [
     nannyMobileNumber: "nannyMobileNumber",
     jobAdminName: "jobAdminName",
     appointmentType: "appointmentType",
-    appointmentDate: "appointmentDate",
+    appointmentDate: "11/10/2024",
     appointmentTime: "appointmentTime",
     appointmentMethod: "appointmentMethod"
   },

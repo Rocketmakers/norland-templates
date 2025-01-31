@@ -1,18 +1,83 @@
 <style type="text/css">
-  @import url('https://use.typekit.net/ofu0mmt.css');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-  .norland-msg {
-    font-family: neue-haas-grotesk-display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    letter-spacing: 0.01em;
-    color: #4F4F4F;
-    font-size: 18px;
-    line-height: 1.4em;
+  @font-face {
+    font-family: 'klinic_slab';
+    src: url('https://www.norland.ac.uk/wp-content/themes/rouge-wp-start-theme/assets/fonts/klinicslabmedium-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
   }
 
-  .norland-msg header {
-    font-size: 20px;
+  body {
+    background-color: #F0E8E1;
+    padding: 1.5rem 0;
+    margin: 0;
+  }
+
+  .norland-msg {
+    font-family: "Poppins", serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #3A3131;
+    font-size: 16px;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .norland-msg h1 {
+    font-family: 'klinic_slab', serif;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-bottom: 0.4rem;
+  }
+
+  .norland-msg .norland-logo {
+    width: 3.125rem;
+    height: 4.125rem;
+  }
+
+  .norland-msg .norland-inner {
+    background-color: #FFF;
+    border-radius: 1rem;
+    border: 1px solid #EAEBED;
+    max-width: 37.5rem;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .norland-msg .norland-appointment {
+    font-size: 1.25rem;
+  }
+
+  .norland-msg .norland-info {
+    padding: 2rem;
+    background-color: #f5f5f5;
+  }
+
+  .norland-msg .norland-space {
+    margin: 1.5rem 0;
+  }
+
+  .norland-msg .norland-sub {
+    color: #9D897D;
+  }
+
+  .norland-msg .norland-sub a {
+    color: inherit;
+  }
+
+  .norland-msg .norland-quote {
+    font-weight: 600;
+    padding-left: 1.5rem;
+    border-left: 1px solid #D9D9D9;
   }
 
   .norland-msg strong {
@@ -23,42 +88,32 @@
     margin: 0;
   }
 
-  .norland-msg .norland-space-top {
-    margin-top: 50px;
-  }
-
   .norland-msg .norland-button {
-    display: block;
-    color: white!important;
-    background-color: #130E15;
+    display: flex;
+    width: 18.75rem;
+    padding: 0.75rem;
+    justify-content: center;
     text-decoration: none;
-    padding: 15px 0;
-    max-width: 290px;
-    font-size: 20px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
     font-weight: 600;
-    text-align: center;
+    color: #F5F5F5;
+    background-color: #3A3131;
   }
-
-  .norland-msg .norland-footer-id-block {
-    font-weight: 600;
-  }
-
-  .norland-msg .norland-footer-id-block img {
-    margin-top: 35px;
-    width: 30px;
-  }
-
   .norland-msg .norland-footer {
-    font-size: 14px;
+    font-size: 0.75rem;
+    color: #9D897D;
+    text-align: center;
+    line-height: 1.3em;
   }
 
-  /* Enquiry */
-
-  .norland-msg label {
-    display: block;
-    margin-top: 20px;
-    font-size: 14px;
-    font-weight: 600;
+  @media screen and (max-device-width: 400px), screen and (max-width: 400px)     {
+    .norland-msg .norland-inner {
+      border-radius: 0;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
 
 </style>
