@@ -40,6 +40,10 @@
       "path": "layouts/nqnTrialRequestedNanny",
       "templates": ["html", "txt"]
     },
+    "referenceClientVerification": {
+      "path": "layouts/referenceClientVerification",
+      "templates": ["html", "txt"]
+    },
     "unreadMessage": {
       "path": "layouts/unreadMessage",
       "templates": ["html", "txt"]
