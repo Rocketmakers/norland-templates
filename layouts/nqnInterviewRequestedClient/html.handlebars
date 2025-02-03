@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Interview Requested</title>
@@ -5,24 +6,35 @@
     {{> styles}}
   </head>
   <body>
-    <div class="norland-msg">
-      {{> header}}
-      <div class="norland-inner">
-        <h1>Interview Requested</h1>
-        <p>Dear {{clientFirstName}},</p>
-        <p>Thank you for requesting an interview with <strong>{{nannyFirstName}} {{nannyLastName}}</strong>.</p>
-        <p>We will now pass on your contact details to {{nannyFirstName}} who should be in touch with you over the next 48 hours to arrange a convenient time and date for a first stage interview. First stage interviews can either take place face to face or via video call.</p>
-        <p>The number {{nannyFirstName}} will call you from is {{nannyMobileNumber}}.</p>
-        <p>If you require any further support or do not hear from {{nannyFirstName}}, please do not hesitate to contact me.</p>
-        {{#if jobAdminName}}
-          <p>If you require any further support or do not hear from {{nannyFirstName}}, please do not hesitate to contact me.</p>
-        <p><strong>{{jobAdminName}}</strong></p>
-        {{else}}
-          <p>If you require any further support or do not hear from {{nannyFirstName}}, please do not hesitate to contact us.</p>
-        <p><strong>Norland Agency</strong></p>
-        {{/if}}
-      </div>
-      {{> footer}}
-      </div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="center">
+          {{> header}}
+          <table role="presentation" class="container">
+            <tr>
+              <td>
+                <h1>Interview Requested</h1>
+                <p class="bottom-space">Dear {{clientFirstName}},</p>
+                <p class="bottom-space">Thank you for requesting an interview with <strong>{{nannyFirstName}} {{nannyLastName}}</strong>.</p>
+                <p class="bottom-space">
+                  We will now pass on your contact details to {{nannyFirstName}}, who should be in touch with you over the next 48 hours to arrange a convenient time and date for a first-stage interview.
+                  First-stage interviews can either take place face to face or via video call.
+                </p>
+                <p class="bottom-space">The number {{nannyFirstName}} will call you from is <strong>{{nannyMobileNumber}}</strong>.</p>
+
+                <p class="bottom-space">If you require any further support or do not hear from {{nannyFirstName}}, please do not hesitate to contact me.</p>
+
+                {{#if jobAdminName}}
+                  <p class="bottom-space"><strong>{{jobAdminName}}</strong></p>
+                {{else}}
+                  <p class="bottom-space"><strong>Norland Agency</strong></p>
+                {{/if}}
+              </td>
+            </tr>
+          </table>
+          {{> footer}}
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
