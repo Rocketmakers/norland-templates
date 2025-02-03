@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>New Direct Message</title>
@@ -5,17 +6,26 @@
     {{> styles}}
   </head>
   <body>
-    <div class="norland-msg">
-      {{> header}}
-      <div class="norland-inner">
-        <h1>New Direct Message</h1>
-        <p>Dear {{firstName}},</p>
-        <p>You have a new direct message. Please log in to the Norland Portal to read it. </p>
-        <a href={{returnUrl}} class="norland-button norland-space" target="_blank" rel="noopener noreferrer">Read new message</a>
-        <p>Many thanks,</p>
-        <p><strong>Norland Agency</strong></p>
-      </div>
-      {{> footer}}
-    </div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="center">
+          {{> header}}
+          <table role="presentation" class="container">
+            <tr>
+              <td>
+                <h1>New Direct Message</h1>
+                <p class="bottom-space">Dear {{firstName}},</p>
+                <p class="bottom-space">You have a new direct message.</p>
+                <p>Please log in to the Norland Portal to read it.</p>
+                <a href="{{returnUrl}}" class="button" target="_blank" rel="noopener noreferrer">Read new message</a>
+                <p class="bottom-space">Many thanks,</p>
+                <p><strong>Norland Agency</strong></p>
+              </td>
+            </tr>
+          </table>
+          {{> footer}}
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

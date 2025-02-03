@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Interview Requested</title>
@@ -5,39 +6,86 @@
     {{> styles}}
   </head>
   <body>
-    <div class="norland-msg">
-      {{> header}}
-      <div class="norland-inner">
-        <h1>Interview Requested</h1>
-        <p>Dear {{nannyFirstName}},</p>
-        <p>Congratulations, <strong>{{clientFirstName}} {{clientLastName}}</strong> has requested to book an interview with you for <strong>{{jobFriendlyId}}, {{jobTitle}}</strong>.</p>
-        <p>Please use the following details to contact them and arrange a time that suits you both:</p>
-        <div class="norland-info">
-          <strong>{{clientFirstName}} {{clientLastName}}</strong><br />
-          <a href="mailto:{{clientEmailAddress}}">{{clientEmailAddress}}</a><br />
-          {{clientMobileNumber}}<br /><br />
-          {{clientAddressLine1}}<br />
-          {{#if clientAddressLine2}}{{clientAddressLine2}}<br />{{/if}}
-          {{clientCity}}<br />
-          {{#if clientCounty}}{{clientCounty}}<br />{{/if}}
-          {{clientCountry}}<br />
-          {{clientPostCode}}
-        </div>
-        <p>Please ensure you call the family within the next 48 hours, addressing them by their family name and title, for example</p>
-        <p class="norland-quote">"Please may I speak with Mrs Smith, my name is Jane Bennett and I am calling from Norland College".</p>
-        <p>Please make sure you have all of your questions to hand as well as your check-list to ensure you get all of the required information prior to your interview. Make sure you have your diary and a pen to hand.</p>
-        <p>As soon as the interview has been arranged please advise the NQN team via email or direct message as to the date, time and family name/job number of the family who you are meeting. It is very important that you let us know so we can follow up after your interview.</p>
-        <p>Following on from your interview, please provide us with written feedback along with the family name/job number as well as whether you would like to move forward with the family or not. If it is the latter, you will be expected to call the family directly to update them on your decision. The NQN team are unable to do this for you.</p>
-        <p>If you are struggling to get hold of the family after 48 hours please get in touch with the NQN team.</p>
-        <p>If you have any questions in the meantime please do not hesitate to ask.</p>
-        <p>Kind regards,</p>
-        {{#if jobAdminName}}
-        <p><strong>{{jobAdminName}}</strong></p>
-        {{else}}
-        <p><strong>Norland Agency</strong></p>
-        {{/if}}
-      </div>
-      {{> footer}}
-    </div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="center">
+          {{> header}}
+          <table role="presentation" class="container">
+            <tr>
+              <td>
+                <h1>Interview Requested</h1>
+                <p class="bottom-space">Dear {{nannyFirstName}},</p>
+                <p class="bottom-space">
+                  Congratulations, <strong>{{clientFirstName}} {{clientLastName}}</strong> has requested to book an interview with you for
+                  <strong>{{jobFriendlyId}}, {{jobTitle}}</strong>.
+                </p>
+                <p class="bottom-space">
+                  Please use the following details to contact them and arrange a time that suits you both:
+                </p>
+
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="info">
+                  <tr>
+                    <td>
+                      <p>
+                        <strong>{{clientFirstName}} {{clientLastName}}</strong><br />
+                        <a href="mailto:{{clientEmailAddress}}">{{clientEmailAddress}}</a><br />
+                        {{clientMobileNumber}}<br /><br />
+                        {{clientAddressLine1}}<br />
+                        {{#if clientAddressLine2}}{{clientAddressLine2}}<br />{{/if}}
+                        {{clientCity}}<br />
+                        {{#if clientCounty}}{{clientCounty}}<br />{{/if}}
+                        {{clientCountry}}<br />
+                        {{clientPostCode}}
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+
+                <p class="bottom-space">
+                  Please ensure you call the family within the next 48 hours, addressing them by their family name and title, for example:
+                </p>
+
+                <p class="norland-quote">
+                  "Please may I speak with Mrs Smith? My name is Jane Bennett, and I am calling from Norland College."
+                </p>
+
+                <p class="bottom-space">
+                  Please make sure you have all of your questions to hand as well as your check-list to ensure you get all of the required
+                  information prior to your interview. Make sure you have your diary and a pen to hand.
+                </p>
+
+                <p class="bottom-space">
+                  As soon as the interview has been arranged, please advise the NQN team via email or direct message as to the date, time, and
+                  family name/job number of the family you are meeting. It is very important that you let us know so we can follow up after your interview.
+                </p>
+
+                <p class="bottom-space">
+                  Following your interview, please provide us with written feedback, including the family name/job number and whether you would
+                  like to move forward with the family or not. If it is the latter, you will be expected to call the family directly to update
+                  them on your decision. The NQN team is unable to do this for you.
+                </p>
+
+                <p class="bottom-space">
+                  If you are struggling to get hold of the family after 48 hours, please get in touch with the NQN team.
+                </p>
+
+                <p class="bottom-space">
+                  If you have any questions in the meantime, please do not hesitate to ask.
+                </p>
+
+                <p class="bottom-space">Kind regards,</p>
+
+                {{#if jobAdminName}}
+                  <p><strong>{{jobAdminName}}</strong></p>
+                {{else}}
+                  <p><strong>Norland Agency</strong></p>
+                {{/if}}
+              </td>
+            </tr>
+          </table>
+          {{> footer}}
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

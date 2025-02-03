@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Verify Email Address</title>
@@ -5,16 +6,27 @@
     {{> styles}}
   </head>
   <body>
-    <div class="norland-msg">
-      {{> header}}
-      <div class="norland-inner">
-        <h1>Verify Email Address</h1>
-        <p>Please verify your email by clicking the button below:</p>
-        <a href={{returnUrl}} class="norland-button norland-space" target="_blank" rel="noopener noreferrer">Verify Email</a>
-        <p>This link will expire in 24 hours.</p>
-        <p class="norland-sub">If you didn&apos;t request this, please ignore this email or contact our support team at <a href="mailto:Agency@norland.ac.uk">Agency@norland.ac.uk</a></p>
-      </div>
-      {{> footer}}
-    </div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="center">
+          {{> header}}
+          <table role="presentation" class="container">
+            <tr>
+              <td>
+                <h1>Verify Email Address</h1>
+                <p>Please verify your email by clicking the button below:</p>
+                <a href="{{returnUrl}}" class="button" target="_blank" rel="noopener noreferrer">Verify Email</a>
+                <p>This link will expire in 24 hours.</p>
+                <p class="subtext">
+                  If you didn&apos;t request this, please ignore this email or contact our support team at
+                  <a href="mailto:Agency@norland.ac.uk">Agency@norland.ac.uk</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+          {{> footer}}
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

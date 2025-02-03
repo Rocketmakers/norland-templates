@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Appointment Booked</title>
@@ -5,26 +6,43 @@
     {{> styles}}
   </head>
   <body>
-    <div class="norland-msg">
-      {{> header}}
-      <div class="norland-inner">
-        <h1>Appointment Booked</h1>
-        <p>Dear {{nannyFirstName}},</p>
-        <p>We are delighted to confirm your {{toLowerCase appointmentType}} with <strong>{{clientFirstName}} {{clientLastName}}</strong>  for <strong>{{jobTitle}} ({{jobFriendlyId}})</strong>.</p>
-        <p class="norland-appointment norland-space"><strong>{{friendlyDate appointmentDate}}</strong> at <strong>{{appointmentTime}}</strong></p>
-        {{#if appointmentMethod}}
-          <p class="norland-info">{{longText appointmentMethod}}</p>
-        {{/if}}
-        <p>You can contact {{clientFirstName}} on: <strong>{{clientMobileNumber}}</strong></p>
-        {{#if jobAdminName}}
-          <p>If you require further information, please do not hesitate to contact me.</p>
-        <p><strong>{{jobAdminName}}</strong></p>
-        {{else}}
-          <p>If you require further information, please do not hesitate to contact us.</p>
-        <p><strong>Norland Agency</strong></p>
-        {{/if}}
-      </div>
-      {{> footer}}
-    </div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="center">
+          {{> header}}
+          <table role="presentation" class="container">
+            <tr>
+              <td>
+                <h1>Appointment Booked</h1>
+                <p class="bottom-space">Dear {{nannyFirstName}},</p>
+                <p>We are delighted to confirm your {{toLowerCase appointmentType}} with <strong>{{clientFirstName}} {{clientLastName}}</strong> for <strong>{{jobTitle}} ({{jobFriendlyId}})</strong>.</p>
+                <p class="appointment">{{friendlyDate appointmentDate}} at {{appointmentTime}}</p>
+
+                {{#if appointmentMethod}}
+                  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="info">
+                    <tr>
+                      <td>
+                        <p>{{longText appointmentMethod}}</p>
+                      </td>
+                    </tr>
+                  </table>
+                {{/if}}
+
+                <p class="bottom-space">You can contact {{clientFirstName}} on: <strong>{{clientMobileNumber}}</strong></p>
+
+                {{#if jobAdminName}}
+                  <p class="bottom-space">If you require further information, please do not hesitate to contact me.</p>
+                  <p><strong>{{jobAdminName}}</strong></p>
+                {{else}}
+                  <p class="bottom-space">If you require further information, please do not hesitate to contact us.</p>
+                  <p><strong>Norland Agency</strong></p>
+                {{/if}}
+              </td>
+            </tr>
+          </table>
+          {{> footer}}
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
