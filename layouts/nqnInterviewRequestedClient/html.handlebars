@@ -3,31 +3,33 @@
   <head>
     <title>Interview Requested</title>
     {{> meta}}
-    {{> styles}}
   </head>
-  <body>
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <body style="margin: 0;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #F0E8E1; margin: 0; padding: 0; font-family: Arial, sans-serif;">
       <tr>
         <td align="center">
           {{> header}}
-          <table role="presentation" class="container">
+          <table role="presentation" width="100%;" cellspacing="0" cellpadding="0" border="0" style="background-color: #FFFFFF; border: 1px solid #EAEBED; padding: 40px 30px; border-radius: 12px; max-width: 600px;">
             <tr>
               <td>
-                <h1>Interview Requested</h1>
-                <p class="bottom-space">Dear {{clientFirstName}},</p>
-                <p class="bottom-space">Thank you for requesting an interview with <strong>{{nannyFirstName}} {{nannyLastName}}</strong>.</p>
-                <p class="bottom-space">
-                  We will now pass on your contact details to {{nannyFirstName}}, who should be in touch with you over the next 48 hours to arrange a convenient time and date for a first-stage interview.
-                  First-stage interviews can either take place face to face or via video call.
+                <h1 style="font-size: 24px; color: #3A3131; font-weight: 600; margin: 0 0 20px; line-height: 1.3;">Interview Requested</h1>
+                <p style="font-size: 16px; color: #3A3131; line-height: 1.5; margin: 0 0 20px 0;">Dear {{clientFirstName}},</p>
+                <p style="font-size: 16px; color: #3A3131; line-height: 1.5; margin: 0 0 20px 0;">
+                  Thank you for requesting an interview with <strong>{{nannyFirstName}} {{nannyLastName}}</strong>.
                 </p>
-                <p class="bottom-space">The number {{nannyFirstName}} will call you from is <strong>{{nannyMobileNumber}}</strong>.</p>
-
-                <p class="bottom-space">If you require any further support or do not hear from {{nannyFirstName}}, please do not hesitate to contact me.</p>
-
+                <p style="font-size: 16px; color: #3A3131; line-height: 1.5; margin: 0 0 20px 0;">
+                  We will now pass on your contact details to {{nannyFirstName}}, who should be in touch with you over the next 48 hours
+                  to arrange a convenient time and date for a first-stage interview. First-stage interviews can either take place face to face or via video call.
+                </p>
+                <p style="font-size: 16px; color: #3A3131; line-height: 1.5; margin: 0 0 20px 0;">
+                  The number {{nannyFirstName}} will call you from is <strong>{{nannyMobileNumber}}</strong>.
+                </p>
                 {{#if jobAdminName}}
-                  <p class="bottom-space"><strong>{{jobAdminName}}</strong></p>
+                  <p style="font-size: 16px; color: #3A3131; line-height: 1.5; margin: 0 0 20px 0;">If you require further information, please do not hesitate to contact me.</p>
+                  <p style="font-size: 16px; font-weight: bold; line-height: 1.5; margin: 0;">{{jobAdminName}}</p>
                 {{else}}
-                  <p class="bottom-space"><strong>Norland Agency</strong></p>
+                  <p style="font-size: 16px; color: #3A3131; line-height: 1.5; margin: 0 0 20px 0;">If you require further information, please do not hesitate to contact us.</p>
+                  <p style="font-size: 16px; font-weight: bold; line-height: 1.5; margin: 0;">Norland Agency</p>
                 {{/if}}
               </td>
             </tr>
