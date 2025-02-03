@@ -7,9 +7,6 @@
     "footer": {
       "path": "partials/html/footer.handlebars"
     },
-    "styles": {
-      "path": "partials/html/styles.handlebars"
-    },
     "meta": {
       "path": "partials/html/meta.handlebars"
     }
