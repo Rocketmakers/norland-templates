@@ -24,6 +24,10 @@
       "path": "layouts/magicLink",
       "templates": ["html", "txt"]
     },
+    "newApplicationClient": {
+      "path": "layouts/newApplicationClient",
+      "templates": ["html", "txt"]
+    },
     "nqnInterviewRequestedClient": {
       "path": "layouts/nqnInterviewRequestedClient",
       "templates": ["html", "txt"]
