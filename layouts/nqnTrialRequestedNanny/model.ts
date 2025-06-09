@@ -7,6 +7,7 @@ export interface IModel {
   nannyFirstName: string;
   jobFriendlyId: string;
   jobTitle: string;
+  clientTitle: string;
   clientFirstName: string;
   clientLastName: string;
   clientEmailAddress: string;
@@ -25,6 +26,7 @@ export const sampleData: IModel[] = [
     nannyFirstName: "nannyFirstName",
     jobFriendlyId: "jobFriendlyId",
     jobTitle: "jobTitle",
+    clientTitle: "clientTitle",
     clientFirstName: "clientFirstName",
     clientLastName: "clientLastName",
     clientEmailAddress: "clientEmailAddress",
