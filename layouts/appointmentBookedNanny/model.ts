@@ -5,6 +5,7 @@
  */
 export interface IModel {
   nannyFirstName: string;
+  clientTitle: string;
   clientFirstName: string;
   clientLastName: string;
   clientMobileNumber: string;
@@ -20,6 +21,7 @@ export interface IModel {
 export const sampleData: IModel[] = [
   {
     nannyFirstName: "nannyFirstName",
+    clientTitle: "clientTitle",
     clientFirstName: "clientFirstName",
     clientLastName: "clientLastName",
     clientMobileNumber: "clientMobileNumber",
