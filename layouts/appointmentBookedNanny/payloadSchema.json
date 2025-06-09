@@ -3,6 +3,7 @@
   "examples": [
     {
       "nannyFirstName": "nannyFirstName",
+      "clientTitle": "clientTitle",
       "clientFirstName": "clientFirstName",
       "clientLastName": "clientLastName",
       "clientMobileNumber": "clientMobileNumber",
@@ -18,6 +19,7 @@
   "type": "object",
   "properties": {
     "nannyFirstName": { "type": "string" },
+    "clientTitle": { "type": "string" },
     "clientFirstName": { "type": "string" },
     "clientLastName": { "type": "string" },
     "clientMobileNumber": {"type": "string"},
@@ -29,6 +31,6 @@
     "appointmentTime": { "type": "string" },
     "appointmentMethod": { "type": "string" }
   },
-  "required": ["nannyFirstName", "clientFirstName", "clientLastName", "clientMobileNumber", "appointmentType", "appointmentDate", "appointmentTime"],
+  "required": ["nannyFirstName", "clientTitle", "clientFirstName", "clientLastName", "clientMobileNumber", "appointmentType", "appointmentDate", "appointmentTime"],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }
