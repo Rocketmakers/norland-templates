@@ -24,6 +24,10 @@
       "path": "layouts/magicLink",
       "templates": ["html", "txt"]
     },
+    "notRegisteredClient": {
+      "path": "layouts/notRegisteredClient",
+      "templates": ["html", "txt"]
+    },
     "newApplicationClient": {
       "path": "layouts/newApplicationClient",
       "templates": ["html", "txt"]
