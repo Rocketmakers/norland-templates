@@ -51,6 +51,10 @@
     "unreadMessage": {
       "path": "layouts/unreadMessage",
       "templates": ["html", "txt"]
+    },
+    "secondaryContactLoginAttempt": {
+      "path": "layouts/secondaryContactLoginAttempt",
+      "templates": ["html", "txt"]
     }
   }
 }

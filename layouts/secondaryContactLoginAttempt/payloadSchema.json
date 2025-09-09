@@ -1,0 +1,1 @@
+{"description":"Specify required object","examples":[{"firstName":"firstName"}],"type":"object","properties":{"firstName":{"type":"string"}},"required":["firstName"],"$schema":"http://json-schema.org/draft-07/schema#"}
