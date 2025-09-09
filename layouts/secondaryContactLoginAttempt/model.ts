@@ -4,7 +4,7 @@
  * @examples require(".").sampleData
  */
 export interface IModel {
-  firstName?: string
+  firstName: string
 }
 
 export const sampleData: IModel[] = [
