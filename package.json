@@ -8,15 +8,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@rocketmakers/orbit-template-http-repository": "2.0.5",
-    "express": "4.21.1",
+    "@rocketmakers/orbit-template-http-repository": "3.1.4",
+    "express": "5.1.0",
     "handlebars": "4.7.8",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "ts-node": "10.9.2",
+    "typescript": "5.9.2"
   },
   "devDependencies": {
-    "@rocketmakers/shell-commands": "^8.1.0",
-    "@types/fs-extra": "^11.0.4",
-    "typescript-json-schema": "^0.65.1"
+    "@rocketmakers/shell-commands": "8.1.0",
+    "@types/fs-extra": "11.0.4",
+    "typescript-json-schema": "0.65.1"
   }
 }

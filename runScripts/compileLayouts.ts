@@ -1,7 +1,7 @@
 #!/usr/bin/env ts-node
 
 import * as handlebars from "handlebars"
-import * as Ajv from "ajv"
+import Ajv from "ajv"
 import * as path from "path"
 import { setDefaultLoggerLevel, createLogger } from "@rocketmakers/shell-commands/lib/logger"
 import { Args } from "@rocketmakers/shell-commands/lib/args"
@@ -9,6 +9,11 @@ import { FileSystem } from "@rocketmakers/shell-commands/lib/fs"
 import { handlebarsHelpers } from "./handlebarsHelpers"
 
 const logger = createLogger("generate-schemas")
+
+interface IServiceJson {
+  partials: Record<string, { path: string }>
+  layouts: Record<string, { path: string, templates: string[] }>
+}
 
 async function run() {
   const args = await Args.match({
@@ -38,9 +43,9 @@ async function run() {
   setDefaultLoggerLevel(log as any)
 
   const fileName = `${serviceName}.json`
-  const serviceJson = JSON.parse(FileSystem.readFile(fileName))
+  const serviceJson = JSON.parse(FileSystem.readFile(fileName)) as IServiceJson
 
-  const serviceJsonSchema = JSON.parse(FileSystem.readFile("node_modules/@rocketmakers/orbit-template-http-repository/lib/serviceJsonSchema.json"))
+  const serviceJsonSchema = JSON.parse(FileSystem.readFile("node_modules/@rocketmakers/orbit-template-http-repository/serviceJsonSchema.json"))
 
   const ajv = new Ajv({ allErrors: true, verbose: true })
   const validServiceJson = ajv.validate(serviceJsonSchema, serviceJson)
