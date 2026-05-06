@@ -15,7 +15,7 @@ Members of this git repository can be granted varying levels of access, to updat
 Payload json schemas can be generated for all layouts within this directory by running:
 
 ```bash
-npm run generate-payload-schemas
+pnpm generate-payload-schemas
 ```
 
 This will generate a `payloadSchema.json` file within your layout template directory, which will be used to validate payloads when sending notifications.
@@ -25,7 +25,7 @@ This will generate a `payloadSchema.json` file within your layout template direc
 You can test sendgrid templates within this repository by running the following:
 
 ```bash
-npm run test-sendgrid-templates
+pnpm test-sendgrid-templates
 ```
 
 This will look in your `sendgrid.json` file and make sure all registered layouts compile successfully with the provided partials and sample data.
@@ -35,7 +35,7 @@ This will look in your `sendgrid.json` file and make sure all registered layouts
 Run the following script to compile out each layout to the `compiledLayouts` dir. The script uses test data from your `model.ts` and allows you to visualise the end product for a notification.
 
 ```bash
-npm run compile-layouts -- -s=<serviceName>
+pnpm compile-layouts -- -s=<serviceName>
 ```
 
 ## Creating/updating a template
@@ -46,10 +46,10 @@ _Whenever any change to this template repository are made you should run both of
 
 ```bash
 # Ensure schemas generate successfully and are up to date
-npm run gen-payload-schemas
+pnpm gen-payload-schemas
 
 # Test example payload data against defined templates
-npm run test-sendgrid-templates
+pnpm test-sendgrid-templates
 ```
 
 This will make sure any potentially breaking/incorrect changes to notifications are not merged into `production`.

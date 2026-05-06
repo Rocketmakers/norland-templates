@@ -55,6 +55,10 @@
     "secondaryContactLoginAttempt": {
       "path": "layouts/secondaryContactLoginAttempt",
       "templates": ["html", "txt"]
+    },
+    "anonymisationScheduleReport": {
+      "path": "layouts/anonymisationScheduleReport",
+      "templates": ["html", "txt"]
     }
   }
 }
