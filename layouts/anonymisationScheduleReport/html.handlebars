@@ -14,9 +14,9 @@
               <td>
                 <h1 style="font-size: 24px; color: #3A3131; font-weight: 600; margin: 0 0 20px 0; line-height: 1.3;">Anonymisation Schedule Report</h1>
                 <p style="font-size: 16px; color: #3A3131; line-height: 1.5; margin: 0 0 20px 0;">Hello</p>
-                <p style="font-size: 16px; color: #3A3131; line-height: 1.5; margin: 0;">
-                  Please find attached the list of user who are scheduled for anonymisation on <strong>{{scheduledTimestamp}}</strong>.
-                </p>
+                <p style="font-size: 16px; color: #3A3131; line-height: 1.5; margin: 0 0 20px 0;"><strong>{{ numberOfClients }}</strong> client(s) are scheduled for anonymisation on <strong>{{ scheduledTimestamp }}</strong>.</p>
+                <p style="font-size: 16px; color: #3A3131; line-height: 1.5; margin: 0 0 20px 0;">To view the complete list of clients, please click the button below.</p>
+                <a href="{{returnUrl}}" style="display: block; background-color: #3A3131; color: #FFFFFF; text-decoration: none; padding: 12px 0; font-size: 16px; font-weight: bold; border-radius: 8px; width: 300px;text-align: center; margin: 0 0 20px;">View scheduled clients</a>
               </td>
             </tr>
           </table>
