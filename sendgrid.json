@@ -59,6 +59,10 @@
     "anonymisationScheduleReport": {
       "path": "layouts/anonymisationScheduleReport",
       "templates": ["html", "txt"]
+    },
+    "pendingCVsClient": {
+      "path": "layouts/pendingCVsClient",
+      "templates": ["html", "txt"]
     }
   }
 }
