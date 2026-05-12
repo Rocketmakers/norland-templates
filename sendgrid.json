@@ -55,6 +55,14 @@
     "secondaryContactLoginAttempt": {
       "path": "layouts/secondaryContactLoginAttempt",
       "templates": ["html", "txt"]
+    },
+    "anonymisationScheduleReport": {
+      "path": "layouts/anonymisationScheduleReport",
+      "templates": ["html", "txt"]
+    },
+    "pendingCVsClient": {
+      "path": "layouts/pendingCVsClient",
+      "templates": ["html", "txt"]
     }
   }
 }
