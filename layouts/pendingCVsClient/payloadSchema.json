@@ -1,0 +1,1 @@
+{"description":"Specify required object","examples":[{"firstName":"John","applicationCount":5,"returnUrl":"https://example.com/clients"}],"type":"object","properties":{"firstName":{"type":"string"},"applicationCount":{"type":"number"},"returnUrl":{"type":"string"}},"required":["applicationCount","firstName","returnUrl"],"$schema":"http://json-schema.org/draft-07/schema#"}
