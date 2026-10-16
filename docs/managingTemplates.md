@@ -56,7 +56,9 @@ This will make sure any potentially breaking/incorrect changes to notifications 
 
 ## Deploying changes/updates to notification templates
 
-When changes are made to this template repository there is no need to re-deploy your API/application. You can call the endpoint below to reload the notification template cache within the deployed api. From then on all notifications will be sent using the newly updated templates.
+This was never implemented, ideally just redeploy Norland, otherwise start and stop the api container (risky)
+
+<del>When changes are made to this template repository there is no need to re-deploy your API/application. You can call the endpoint below to reload the notification template cache within the deployed api. From then on all notifications will be sent using the newly updated templates.</del>
 
 ```bash
 # POST request to: {{NorlandAPI}}/templates/update
